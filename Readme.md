@@ -1,6 +1,6 @@
 # myStarBlockchain
 
-Demonstration of a RESTful Web API with Node.js Framework and a simple blockchain implementation.
+Demonstration of a RESTful Web API with Node.js Framework and simple blockchain implementation.
 
 ## Getting Started
 
