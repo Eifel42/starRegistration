@@ -101,11 +101,10 @@ If required parameter not set or does not fit to the parameter validation:
 {"statusCode":400,"error":"Bad Request","message":"Invalid request payload input"}
 ```
 If address not registered and signend: Wallet Address is not registered or verified!   
-If the encoded story (hex) string length more then 500 Bytes: Encoded HEX String greater then 500 Bytes!
+If the encoded story string length more then 500 Bytes: Encoded HEX String greater then 500 Bytes!
 
 ### Allow User Message Signature
-Restful Post method which allows user message signature. It checks the signed signature and post the validation window. 
-The validation window is the time in seconds till the request expires.
+This post method that allows a user to sign a message signature. It checks the signed signature and posts the validation window. The validation window is the time in seconds till the request expires.
 
 ```
 curl -X "POST" "http://localhost:8000/message-signature/validate" \
@@ -132,7 +131,7 @@ curl -X "POST" "http://localhost:8000/message-signature/validate" \
 
 #### Error
 
-If the address not register: FAILED Address not register! Please start a validation request.  
+If the address does not register: FAILED Address not register! Please start a validation request.
 It the time is expired: FAILED time has expired! Please start a new request.
 
 ### Star Registration
@@ -290,7 +289,7 @@ HapiJS is a rich framework for building applications and services. The advantage
 
 ## Authors
 
-* **Stefan Zils** - *Initial work* - [Bitbucket Repository](https://bitbucket.org/basteStefan/udacity-projects/src/master/star-blockchain/)
+* **Stefan Zils** - *Initial work* -
 
 
 ## License
