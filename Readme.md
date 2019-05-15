@@ -280,7 +280,7 @@ If the block not found the service returns following error message: Block xxx no
 
 ## HapiJS Framework Decision
 
-HapiJS is a rich framework for building applications and services. The advantage is that the framework covers much work compare to express. HapiJS is plug-able and for these purposes more lightweight than sails. As a disadvantage, HapiJS as a smaller user base than express and sails.
+HapiJS is a rich framework for building applications and services. The advantage is that the framework covers much work compare to express. HapiJS is plug-able and for these purposes more lightweight than sails. As a disadvantage, HapiJS has a smaller user base than express and sails.
 
 ## Built with
 
