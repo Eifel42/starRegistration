@@ -4,7 +4,7 @@ Demonstration of a RESTful Web API with Node.js Framework and simple blockchain 
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions help you to set up up and to operate the project. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
