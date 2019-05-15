@@ -15,13 +15,13 @@ Install nodejs and npm on your machine.
 brew update
 ```
 
-If node already install, check the version and upgrade to the latest version.
+If the node already install, check the version and upgrade to the latest version.
 ```
 node -v
 npm -v
 brew upgrade
 ```
-#### Ohter operation systems
+#### Other operation systems
 
 * [NodeJS Installation operation systems](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions) - NodeJS Web Framework
 
@@ -38,7 +38,7 @@ brew upgrade
 npm install
 ```
 
-#### Manual Installation in directory:
+#### Manual Installation in the directory:
 
 ```
 npm init
@@ -59,11 +59,11 @@ npm install word-count -save
 node server.js
 ```
 ### Tests
-These tests describe first initial tests. Every services section include a request and response.
+These tests describe the first initial tests. Every service section includes a request and response.
 ```
 curl http://localhost:8000/block/0
 ```
-**Respone Example**
+**Response Example**
 ```
 {"hash":"d72000174e9f641f941bd4cc9e7311ef48b3a03f466f0224a0dbf7e66c0360f7",
  "height":0,
