@@ -135,7 +135,7 @@ If the address does not register: FAILED Address not register! Please start a va
 It the time is expired: FAILED time has expired! Please start a new request.
 
 ### Star Registration
-Restful Post method which add a star to the blockchain.  
+This post method adds a star to the blockchain.
 
 ```
 curl -X "POST" "http://localhost:8000/block" \
@@ -165,7 +165,7 @@ curl -X "POST" "http://localhost:8000/block" \
 #### Parameters
 | Parameter| Description   | Required |
 | :------- | :-------------| :-------:|
-| address  | Wallet address. Contains 26 - 35 characters, only numbers and letters (upper and lower cases).    | yes |
+| address  | Wallet address. It contains 26 - 35 characters, only numbers, and letters (upper and lower cases).    | yes |
 | star  | Star schema attributes describe as star:xxx.    | yes |
 | star:dec  | Declination  | yes |
 | star:ra  |  Right ascension | yes |
@@ -181,12 +181,12 @@ If required parameter not set or does not fit to the parameter validation:
 ```
 ### Search by Blockchain Wallet Address
 
-Restful GET method which retrieve blocks from the blockchain by wallet address.  
+A get method that retrieves blocks from the blockchain by the wallet address.  
 ```
 curl "http://localhost:8000/stars/address:[ADDRESS]"
 curl "http://localhost:8000/stars/address:142BDCeSGbXjWKaAnYXbMpZ6sbrSAo3DpZ"
 ```
-**Respone Example**
+**Response Example**
 ```
 [{"hash":"aa0e9c438560447046f7bf880e4b8bebb08da9d3225e394f010f62359f745043",
   "height":1,
@@ -212,7 +212,7 @@ curl "http://localhost:8000/stars/address:142BDCeSGbXjWKaAnYXbMpZ6sbrSAo3DpZ"
 #### Parameter 
 | Parameter| Description   | Required |
 | :------- | :-------------| :-------:|
-| address  | Wallet address. Contains 26 - 35 characters, only numbers and letters (upper and lower cases).    | yes |
+| address  | Wallet address. It contains 26 - 35 characters, only numbers, and letters (upper and lower cases).    | yes |
 
 #### Error
 If no block found the service returns following error message: No entries found for address 142BDC...<br>
@@ -222,12 +222,12 @@ If no hash parameter set:
 ```
 ### Search by Star Block Hash
 
-Restful GET method which retrieve a block from the blockchain by block hash.  
+A get method that retrieves a block from the blockchain by the block hash.
 ```
 curl "http://localhost:8000/stars/hash:[HASH]"
 curl "http://localhost:8000/stars/hash:5e42cef837e205d7a1420e893d69d89baaa6d2127cbc5507871dbf43d98cf19d"
 ```
-**Respone Example**
+**Response Example**
 ```
 {"hash":"5e42cef837e205d7a1420e893d69d89baaa6d2127cbc5507871dbf43d98cf19d",
  "height":1,
