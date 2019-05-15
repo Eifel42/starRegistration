@@ -15,7 +15,7 @@ Install nodejs and npm on your machine.
 brew update
 ```
 
-If the node already install, check the version and upgrade to the latest version.
+If the node already installed, check the version and upgrade to the latest version.
 ```
 node -v
 npm -v
@@ -59,7 +59,7 @@ npm install word-count -save
 node server.js
 ```
 ### Tests
-These tests describe the first initial tests. Every service section includes a request and response.
+These tests describe the first initial tests. Every service section includes a request and a response.
 ```
 curl http://localhost:8000/block/0
 ```
@@ -74,8 +74,7 @@ curl http://localhost:8000/block/0
 ## Services Endpoints
 
 ### Validate User Request
-Restful Post method which allow a user to register his wallet address to the services. 
-
+A post method allows a user to register his wallet address to the services.
 ```
 curl -X "POST" "http://localhost:8000/requestValidation" \
      -H 'Content-Type: application/json; charset=utf-8' \
@@ -93,7 +92,7 @@ curl -X "POST" "http://localhost:8000/requestValidation" \
 #### Parameters
 | Parameter| Description   | Required |
 | :------- | :-------------| :-------:|
-| address  | Wallet address. Contains 26 - 35 characters, only numbers and letters (upper and lower cases).    | yes |
+| address  | Wallet address. It contains 26 - 35 characters, only numbers, and letters (upper and lower cases).    | yes |
 
 #### Error
 
@@ -102,9 +101,10 @@ If required parameter not set or does not fit to the parameter validation:
 {"statusCode":400,"error":"Bad Request","message":"Invalid request payload input"}
 ```
 If address not registered and signend: Wallet Address is not registered or verified!   
-If encoded HEX Story greater then 500 Bytes: Encoded HEX String greater then 500 Bytes!
+If the encoded story (hex) string length more then 500 Bytes: Encoded HEX String greater then 500 Bytes!
+
 ### Allow User Message Signature
-Restful Post method which allow user message signature. It checks the signed signature and post the validation window. 
+Restful Post method which allows user message signature. It checks the signed signature and post the validation window. 
 The validation window is the time in seconds till the request expires.
 
 ```
