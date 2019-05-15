@@ -253,7 +253,7 @@ If no hash parameter set:
 ```
 ### Search by Star Block Height
 
-Restful GET method which retrieve a block from the blockchain by block height.  
+A get method that retrieves a block from the blockchain by block height.  
 ```
 curl "http://localhost:8000/block/1"
 ```
@@ -273,14 +273,14 @@ curl "http://localhost:8000/block/1"
 #### Parameter 
 | Parameter| Description   | Required |
 | :------- | :-------------| :-------:|
-| blockheight  | The number of the blockheight for the request. If no Parameter set, the service retrieves the Genesis block (0).| yes |
+| blockheight  | The number of the block height for the request. If no Parameter set, the service retrieves the Genesis block (0).| yes |
 
 #### Error
 If the block not found the service returns following error message: Block xxx not found!
 
 ## HapiJS Framework Decision
 
-HapiJS is a rich framework for building applications and services. The advantages are the framework covers a lot of work compare to express. HapiJS is plug able and for these purposes more lightweight than sails. As a disadvantage HapiJS as a smaller user base than express and sails.
+HapiJS is a rich framework for building applications and services. The advantage is that the framework covers much work compare to express. HapiJS is plug-able and for these purposes more lightweight than sails. As a disadvantage, HapiJS as a smaller user base than express and sails.
 
 ## Built with
 
