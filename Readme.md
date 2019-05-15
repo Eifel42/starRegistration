@@ -126,7 +126,7 @@ curl -X "POST" "http://localhost:8000/message-signature/validate" \
 ```
 | Parameter| Description   | Required |
 | :------- | :-------------| :-------:|
-| address  | Wallet address. Contains 26 - 35 characters, only numbers and letters (upper and lower cases).    | yes |
+| address  | Wallet address. It contains 26 - 35 characters, only numbers, and letters (upper and lower cases).    | yes |
 | signature| Signed message of the response attribute from the validate user request service.  | yes |
 
 #### Error
